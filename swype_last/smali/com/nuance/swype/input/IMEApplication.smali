@@ -4633,20 +4633,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_29
-
-    .line 250
-    const/4 v0, 0x1
-
-    new-array v0, v0, [Lio/fabric/sdk/android/Kit;
-
-    new-instance v1, Lcom/crashlytics/android/Crashlytics;
-
-    invoke-direct {v1}, Lcom/crashlytics/android/Crashlytics;-><init>()V
-
-    aput-object v1, v0, v2
-
-    invoke-static {p0, v0}, Lio/fabric/sdk/android/Fabric;->with(Landroid/content/Context;[Lio/fabric/sdk/android/Kit;)Lio/fabric/sdk/android/Fabric;
+    # Analytics removed: Crashlytics/Fabric initialization disabled for privacy
 
     .line 254
     :cond_29

@@ -152,22 +152,12 @@
         <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.nuance.swype.input.PermissionRequestActivity" android:theme="@style/AppTheme.Translucent.NoTitleBar"/>
         <receiver android:name="com.nuance.swype.connect.AccountCreationBroadcastReciever"/>
         <meta-data android:name="android.nfc.disable_beam_default" android:value="true"/>
-        <meta-data android:name="LOCALYTICS_APP_KEY" android:value="99e537be837bd8b2d614a95-ae03b462-039b-11e7-153f-0058371446d0"/>
         <meta-data android:name="com.nuance.android.util.GlideConfiguration" android:value="GlideModule"/>
-        <receiver android:exported="true" android:name="com.localytics.android.ReferralReceiver">
-            <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER"/>
-            </intent-filter>
-        </receiver>
-        <meta-data android:name="io.fabric.ApiKey" android:value="07a93b5da085e5acb9ab255c61b54f7490d2c03d"/>
+        <!-- Analytics removed for privacy: Localytics, Fabric, Google Ads, Facebook SDK -->
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
         <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
         <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
         <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
-        <activity android:exported="true" android:name="com.facebook.CustomTabActivity"/>
-        <activity android:name="com.facebook.CustomTabMainActivity"/>
     </application>
 </manifest>
